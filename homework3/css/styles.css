@@ -71,6 +71,8 @@ nav .menu ul li a {
 	width: 80px;
 	margin-left: 20px;
 	padding: 11px 0 11px 30px;
+	border-left: 1px solid transparent;  /* transparent borders serves       */
+	border-right: 1px solid transparent; /* to eliminate the jump menu items */
 	text-decoration: none;
 	color: #fff;
 	background: #575757; /* For browsers that do not support gradients */
@@ -135,18 +137,26 @@ nav .menu ul li a:hover {
 	list-style: none;
 }
 
+/* supporting class for vertical alignment */
+.footer-area:before {
+	height: 100%;
+	vertical-align: middle;
+}
+
+.footer-area .center {
+	display: inline-block;
+	vertical-align: middle;
+}
+/* end of utility class for vertical alignment */
+
 .footer-area ul li {
-	display: block;
 	float: left;
 	padding-left: 30px;
 }
 
 .footer-area ul li a {
-	display: inline-block;
-	float: left;
 	width: 100px;
 	text-decoration: none;
-	line-height: 1;
 	color: #000;
 }
 
@@ -155,17 +165,15 @@ nav .menu ul li a:hover {
 }
 
 .footer-area p {
-	padding-right: 30px;
-	text-align: right;
+	padding-left: 430px;
 	color: #000;
-	line-height: 1;
 }
 
 /* article */
 article .center img {
 	width: 667px;
 	height: 400px;
-border: 1px solid #c8c8c8;
+	border: 1px solid #c8c8c8;
 }
 
 .content p  {
