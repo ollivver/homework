@@ -1,0 +1,301 @@
+body {
+	font-family: Tahoma, Verdana, serif;
+	color: #000;
+	font-size: 14px;
+	line-height: 18px;
+	background: #25a9c0 url(../img/b_ground.jpg) repeat-x;
+}
+
+/* layout */
+.google-head {
+	width: 1280px;
+	height: 38px;
+	margin: 0 auto; 
+	background-color: gray;
+}
+
+#wrapper {
+	width: 1000px;
+	height: 981px;
+	margin: 0 auto;
+	border-bottom: 3px solid #031d28;
+	box-shadow: -3px 0px 8px #4f4f50,
+				 3px 0px 8px #4f4f50;
+	background: #fff;
+}
+
+.head {
+	height: 175px;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	padding-left: 35px;
+	padding-top: 11px;
+}
+
+.contacts {
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+	font-size: 12px;
+	color: #128aa7;
+}
+
+.slogan {
+	position: absolute;
+	top: 110px;
+	left: 100px;
+	font-size: 12px;
+	color: #128aa7;
+}
+
+/* blocks with flags */
+.fl-m a {
+	display: block;
+	float: right;
+	position: relative;
+	top: 110px;
+	left: 126px;
+	width: 50px;
+	height: 70px;
+	font-size: 10px;
+	line-height: 14px;
+	color: #128aa7;
+}
+
+/* caption image aligning */
+.fl-m a img {
+	padding-left: 2px;
+}
+
+.fl-s a {
+	display: block;
+	float: right;
+	position: relative;
+	top: 110px;
+	left: 122px;
+	width: 58px;
+	height: 70px;
+	font-size: 10px;
+	line-height: 14px;
+	color: #128aa7;
+}
+
+/* caption image aligning */
+.fl-s a img {
+	padding-left: 4px;
+}
+
+.fl-b a {
+	display: block;
+	float: right;
+	position: relative;
+	top: 110px;
+	left: 122px;
+	width: 58px;
+	height: 70px;
+	font-size: 10px;
+	line-height: 14px;
+	color: #128aa7;
+}
+
+/* caption text aligning */
+.fl-b span {
+	padding-left: 7px; 
+}
+
+.fl-t a {
+	display: block;
+	float: right;
+	position: relative;
+	top: 110px;
+	left: 122px;
+	width: 58px;
+	height: 70px;
+	font-size: 10px;
+	line-height: 14px;
+	color: #128aa7;
+}
+
+/* caption text aligning */
+.fl-t a span {
+	padding-left: 7px; 
+}
+
+.fl-n a {
+	display: block;
+	float: right;
+	position: relative;
+	top: 110px;
+	left: 122px;
+	width: 58px;
+	height: 70px;
+	font-size: 10px;
+	line-height: 14px;
+	color: #128aa7;
+}
+
+/* caption text aligning */
+.fl-n a span {
+	padding-left: 7px; 
+}
+
+.fl-i a {
+	display: block;
+	float: right;
+	position: relative;
+	top: 110px;
+	left: 122px;
+	width: 58px;
+	height: 70px;
+	font-size: 10px;
+	line-height: 14px;
+	color: #128aa7;
+}
+
+/* caption text aligning */
+.fl-i a span {
+	padding-left: 7px; 
+}
+/* end of blocks with flags */
+
+.photo {
+	height: 237px;
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+
+.menu {
+	display: inline-block;
+	width: 1000px;
+	height: 28px;
+	line-height: 18px;
+	background: #303030;
+	box-shadow: 0px 3px 3px #373737;
+}
+
+.container { /* columns of equal height - Method #2 */
+	width: 1000px;
+	overflow: hidden;
+}
+
+.sidebar1 {
+	float: left;
+	width: 210px;
+	background-color: #edeef0;
+	padding-bottom: 20000px; /* columns of equal height - Method #2 */
+	margin-bottom: -20000px;
+}
+
+.content {
+	float: left;
+	width: 580px;
+	padding-bottom: 20000px; /* columns of equal height - Method #2 */
+	margin-bottom: -20000px;
+	background-color: #fff;
+}
+
+.sidebar2 {
+	float: right;
+	width: 210px;
+	background-color: #edeef0;
+	padding-bottom: 20000px; /* columns of equal height - Method #2 */
+	margin-bottom: -20000px;
+}
+
+.footer-area {
+	height: 30px;
+	line-height: 30px; /* vertical aligning */
+	background-color: transparent;
+}
+
+/* clear the flow */
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* nav - drop-down menu */
+nav {
+	line-height: 14px;
+}
+
+nav .menu {
+	font-size: 14px;
+
+}
+
+nav .menu ul {
+	padding-left: 40px;
+}
+
+nav .menu ul li {
+	float: left;
+	position: relative;
+	display: block;
+	list-style: none;
+	padding: 5px 30px 5px 20px;
+}
+
+nav .menu ul li a {
+	padding-left: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav .menu ul li ul {
+	position: absolute;
+	left: -9999px;
+	padding-left: 0; 
+	list-style: none;
+}
+
+nav .menu ul li ul li {
+	float: none;
+	box-shadow: 0px 3px 3px #373737;
+}
+
+nav .menu ul li ul li a {
+	white-space: nowrap;
+	display: block;
+}
+
+/* white triangle - spesial simbol */
+nav .menu ul li a span {
+	font-size: 9px;
+}
+
+nav .menu ul li:hover ul {
+	left: 0;
+	background: #303030;
+}
+
+nav .menu ul li:hover ul li a:hover {
+	color: #108dad;
+}
+
+/* footer */
+.footer-area p {
+	text-align: center;
+	padding-top: 3px;
+	font-size: 12px;
+	color: #fff;
+}
+
+/* for sidebar's content */
+h3 {
+	padding-top: 8px;
+	text-align: center;
+	font-size: 18px;
+	color: #424c43;
+}
+
+aside p, section p {
+	padding-top: 7px;
+	text-align: center;
+	line-height: 1.8;
+	color: #424c43;
+}
