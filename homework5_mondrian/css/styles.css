@@ -1,0 +1,148 @@
+/* reset */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	color: #000;
+	background: #c0c0c0;
+}
+
+#wrapper {
+	width: 500px;
+	height: 540px;
+	margin: 70px auto;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	width: 70px;
+	height: 60px;
+}
+
+/* style for table cell */
+/* the counting direction - left to right and top to bottom */
+.line11 {
+	width: 115px;
+	height: 47px;
+	border-top: 0;
+	border-right: 10px solid #000;
+	border-bottom: 10px solid #000;
+	border-left: 0;
+	background-color: #fff;
+}
+
+.line12 {
+	width: 200px;
+	border-top: 0;
+	background-color: #fff;
+}
+
+.line13 {
+	width: 165px;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 10px solid #000;
+	border-left: 10px solid #000;
+	background-color: #ffea5d;
+}
+
+.line21 {
+	width: 44px;
+	height: 128px;
+	border-right: 10px solid #000;
+	border-bottom: 10px solid #000;
+	border-left: 0;
+	background-color: #fff;
+}
+
+.line22 {
+	border-right: 10px solid #000;
+	border-bottom: 10px solid #000;
+	background-color: #fe5533;
+}
+
+.line23 {
+	border-right: 0;
+	border-bottom: 10px solid #000;
+	background-color: #ffec60;
+}
+
+.line31 {
+	border-left: 0;
+	background-color: #fff;
+}
+
+.line33 {
+	height: 128px;
+	background-color: #fff;
+}
+
+.line34 {
+	border-right: 0;
+	border-left: 10px solid #000;
+	background-color: #fff;
+}
+
+.line41 {
+	border-right: 10px solid #000;
+	border-bottom: 10px solid #000;
+	border-left: 10px solid #000;
+	background-color: #091813;
+}
+
+.line42 {
+	width: 128px;
+	border-bottom: 10px solid #000;
+	background-color: #fff;
+}
+
+.line43 {
+	border-top: 10px solid #000;
+	border-right: 0;
+	border-bottom: 10px solid #000;
+	border-left: 10px solid #000;
+	background-color: #fff;
+}
+
+.line51 {
+	border-top: 10px solid #000;
+	border-bottom: 0;
+	border-left: 0;
+	background-color: #ffe457;
+}
+
+.line52 {
+	height: 58px;
+	background-color: #fff;
+}
+
+.line53 {
+	border-right: 0;
+	border-bottom: 10px solid #000;
+	border-left: 10px solid #000;
+	background-color: #0a4886;
+}
+
+.line61 {
+	border-right: 10px solid #000;
+	border-bottom: 0;
+	background-color: #fff;
+}
+
+.line62 {
+	height: 36px;
+	border-top: 10px solid #000;
+	border-bottom: 10px solid #000;
+	background-color: #28322f;
+}
+
+.line71 {
+	border-right: 0;
+	border-bottom: 0;
+	background-color: #fff;
+}
