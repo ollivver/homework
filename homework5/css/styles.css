@@ -1,0 +1,227 @@
+body {
+	font-family: 'helvetica_neueregular',Tahoma, sans-serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 16px;
+	background: #fff;
+}
+
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('../fonts/helveticaneue-medium-webfont.eot');
+    src: url('../fonts/helveticaneue-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-medium-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-medium-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-medium-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-medium-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+/* layout */
+#wrapper {
+	width: 1215px;
+	height: 1064px;
+	margin: 0 auto;
+}
+
+.menu {
+	display: inline-block;
+	width: 1215px;
+	height: 35px;
+	background: #074b88;
+}
+
+.bg-photo {
+	display: block;
+	position: relative;
+	width: 1215px;
+	height: 1029px;
+	background: url(../img/bg_image.jpg);
+}
+
+.pop-up-window {
+	display: block;
+	position: absolute;
+	width: 560px;
+	height: 610px;
+    top: 0;				/* vertical & gorizontal aligning */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/* nav */
+nav .menu {
+	font-size: 14px;
+}
+
+nav .menu ul {
+	margin-left: 335px;
+	list-style: none;
+}
+
+nav p {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: -5px;
+	line-height: 35px;
+	border-left: 1px solid #fff;
+	color: #fff;
+}
+
+nav p a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.first {
+	line-height: 35px;
+}
+
+.first p a.under:hover {
+	text-decoration: underline;
+}
+
+.menu p img {
+	display: inline-block;
+	vertical-align: middle;	 /* flag image vertical aligning */	
+	line-height: 1.25;		/* override the usual height of a row */
+	padding-right: 5px;
+}
+
+nav .menu ul li a {
+	float: left;
+	position: relative;
+	width: 100px;
+	text-align: center;
+	line-height: 35px;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav .menu ul li a:hover, nav .menu p:hover {
+	background: #4eabda;
+}
+
+/* pop-up window */
+.head {
+	height: 63px;
+	line-height: 63px;
+	border-bottom: 2px solid #fff;
+	font-size: 24px;
+}
+
+/* alignment of the text in the center */
+.aligncenter {
+	text-align: center;
+}
+
+.f-book {
+	height: 70px;
+	line-height: 70px;
+}
+
+.f-book button.inner {
+	display: inline-block;
+	width: 560px;
+	vertical-align: middle;		/* vertical aligning */
+	margin: 0 auto;				/* gorizontal aligning */
+	background-color: transparent; /* the transparent background for button */
+	border: 0 solid transparent;
+}
+
+.ou {
+	display: block;
+	height: 50px;
+	text-align: center;
+}
+
+/* supporting block for aligning */
+.ou span.before {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.ou span.center img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* white color for placeholder letters */
+input::-webkit-input-placeholder {
+	color: #fff;
+}
+
+input::-moz-placeholder {
+	color: #fff;
+}
+
+form input.field {
+	display: block;
+	width: 276px;
+	height: 35px;
+	margin: 15px auto;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid transparent;
+	background: #101010;
+	font-family: 'helvetica_neueregular',Tahoma, sans-serif;
+	font-size: 14px;
+}
+
+form input.field:focus {
+	border: 1px solid transparent;
+	box-shadow: 2px 2px 10px #3385ff,
+			   -2px -2px 10px #3385ff;
+	background: #1b5288;
+}
+
+form .check {
+	height: 35px;
+	text-align: center;
+
+}
+
+/* supporting block for aligning */
+form .check span.before {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+form .check input.box {
+	display: inline-block;
+	height: 30px;
+	vertical-align: middle;
+	font-size: 20px;
+}
+
+.cr-account {
+	height: 60px;
+}
+
+.cr-account p {
+	text-align: center;
+}
+
+.cr-account button.create {
+	display: block;
+	width: 149px;
+	height: 35px;
+	margin: 0 auto;
+	background-image: url(../img/button.png);
+	border: 0 solid transparent;
+	font-family: 'helvetica_neueregular',Tahoma, sans-serif;
+	color: #fff;
+	font-size: 14px;
+}
+
+.agree-terms p {
+	font-size: 11px;
+}

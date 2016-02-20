@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My homework #5</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+	<div id="wrapper"><!-- #wrapper -->
+		<nav><!-- top nav -->
+		    <div class="menu">
+			    <ul>
+				    <li><a href="#">Meu YouBike</a></li>
+				    <li><a href="#">Vender</a></li>
+				    <li><a href="#">Forum</a></li>
+				    <li><a href="#">Contato</a></li>
+				    <li><a href="#">Ajuda</a></li>
+				</ul>
+				<div class="first">
+			        <p><img src="img/flag.png"><a class="under" href="#"> Minhas Ofertas</a></p>
+			    	<p>Ola! <a class="under" href="#">Entrar</a> ou <a class="under" href="#">Cadastre-se</a></p>
+			    </div>
+			</div>
+	    </nav><!-- end of top nav -->
+
+	    <section class="bg-photo">
+
+		    <section class="pop-up-window">
+		    	<div class="head">
+		    		<p class="aligncenter" >Cadastre-ce</p>
+		    	</div>
+				<form action="fbook-entry.php" name="fbook-form">
+
+		    		<div class="f-book">
+		    			<button class="inner">
+		    				<img src="img/f-button.png" form="facebook">
+		    			</button>
+		    		</div>
+
+		    	</form>	<!-- end of facebook form -->
+
+		    	<div class="ou">
+		    		<span class="before"></span>
+		    		<span class="center"><img src="img/line.png"> OU <img src="img/line.png"></span>
+		    	</div>
+
+		    	<form action="login-entry.php" name="main-form">
+		
+					<input type="text" class="field" name="f-name" placeholder=" First Name" autofocus>
+					<input type="text" class="field" name="l-name" placeholder=" Last Name">
+					<input type="text" class="field" name="email" placeholder=" Email Adress">
+					<input type="password" class="field" name="ch-pass" placeholder=" Choose Password">
+					<input type="password" class="field" name="conf-pass" placeholder=" Password Confirm">
+					<div class="check">
+						<span class="before"></span>
+						<input type="checkbox" class="box" name="send" value="checked"> Send me Youbike updates and tips<br>
+					</div>
+			    </form> <!-- end of main form -->
+
+			    <form action="create-account.php" name="create-account">
+
+		    		<div class="cr-account">
+		    			<p><button class="create">
+		    				Create my Account</button>
+		    			</p>	
+		    		</div>
+
+		    	</form>	<!-- end of facebook form -->
+
+		    	<div class="agree-terms">
+		    		<p class="aligncenter">By clicking the button above, you agree to the Terms of Service<br>
+		    		View our Privacy Policy.</p>
+		    	</div>
+			</section> <!-- end of pop-up window section -->
+		</section>
+
+	</div><!-- end of #wrapper -->
+</body>
+</html>
