@@ -9,7 +9,7 @@ body {
 #wrapper {
 	width: 1000px;
 	height: 1310px;
-	margin: 0 0; /* reference point for coordinates */
+	margin: 0 auto; /* reference point for coordinates */
 	background-color: #fff;
 }
 
