@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework #5-6</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" >
+	<script src="js/script.js" type="text/javascript"></script>
+</head>
+<body onload="initialData()">
+	<div id="wrapper">
+		<form name="display" class="output__form">
+			<input type="text" name="timer__data" class="hms__timer"></input>
+			<input type="text" name="ms__data" class="ms__timer"></input><br>
+			<button type="button" name="start__pause" onclick="counterOnOff()">Start</button>
+			<button type="button" name="split" onclick="splitTimer()">Split</button>
+			<button type="button" onclick="counterReset()">Clear</button>
+		</form>
+		<div id="split__data"></div>
+	</div>
+</body>
+</html>

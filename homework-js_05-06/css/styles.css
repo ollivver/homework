@@ -1,0 +1,82 @@
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	font-family: Arial, Tahoma, sans-serif;
+	color: #000;
+	font-size: 24px;
+	line-height: 32px;
+	background: url(../img/autumn-leaves-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#wrapper {
+	width: 768px;
+	min-height: 600px;
+	height: 100%;
+	margin: 20px auto;
+	text-align: center;
+	background: #004080;
+}
+
+.output__form {
+	display: block;
+	width: 100%; 
+	height: 180px;
+	padding-top: 80px;
+}
+
+.output__form input {
+	border: 2px solid #4d94ff;
+	border-radius: 15px;
+}
+
+/* area for timer display - HoursMinutesSeconds */
+.hms__timer {
+	width: 260px;
+	height: 60px;
+	padding-left: 22px;
+	font-size: 48px;
+	color: #003d99;
+}
+
+/* area for displat Milliseconds */
+.ms__timer {
+	width: 140px;
+	height: 60px;
+	font-size: 48px;
+	color: #003d99;
+}
+
+/* button */
+.output__form button {
+	min-width: 120px;
+	height: 36px;
+	text-align: center;
+	margin: 40px auto 10px;
+	padding: 0 15px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #063240;
+	border-radius: 5px;
+	border-color: #878B8C; 
+	background: -webkit-linear-gradient(#e8f6fa, #11b8ed); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e8f6fa, #11b8ed); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e8f6fa, #11b8ed); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e8f6fa, #11b8ed); /* Standard syntax (must be last) */
+}
+
+/* area for timer data */
+#split__data {
+	display: inline-block;
+	clear: both;
+	width: 240px;
+	min-height: 60px;
+	height: 90%;
+	text-align: left;
+	color: #fff;
+}
