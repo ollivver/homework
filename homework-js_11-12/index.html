@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework #11-12</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" >
+	<script src="js/jquery-1.12.0.min.js" type="text/javascript"></script>
+	<script src="js/jquery.slider.js" type="text/javascript"></script>
+</head>
+<body>
+	
+	<div class="wrapper">
+
+		<section class="demo">
+
+	  	<button class="prev">&laquo;</button>
+		  
+		  <div class="container">
+		    <ul class="slider-list">
+		      <li class="slider-item"><img src="img/img1.jpg"></li>
+					<li class="slider-item"><img src="img/img2.jpg"></li>
+					<li class="slider-item"><img src="img/img3.jpg"></li>
+					<li class="slider-item"><img src="img/img4.jpg"></li>
+					<li class="slider-item"><img src="img/img5.jpg"></li>
+					<li class="slider-item"><img src="img/img6.jpg"></li>
+				</ul>
+		  </div>
+
+		  <button class="next">&raquo;</button>
+
+		</section>
+
+		<section class="template">
+
+			<script type="text/template" id="template_task">
+				<div>
+
+					<h3><%= data[0].title %></h3>
+						<img class="photo" src="<%= data[0].content %>" alt="myphoto">
+
+						<% for (var i = 1; i < data.length; i++) { %>
+				     
+							<p><%= data[i].title %></p>
+					<ul>
+						<% for (var j = 0; j < data[i].content.length; j++) { %>
+				    <li><%= data[i].content[j] %></li>
+				    <% }; %>
+					</ul>
+					<hr>
+				  	<% }; %>
+				</div>
+				</script>
+				
+		</section>
+		
+	</div>
+
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/jquery.tmpl.js" type="text/javascript"></script>
+	
+</body>
+</html>
