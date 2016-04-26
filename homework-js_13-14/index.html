@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework #13-14</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" >
+	<script src="js/jquery-1.12.0.min.js" type="text/javascript"></script>
+	<script src="js/jquery.tmpl.js" type="text/javascript"></script>
+	
+</head>
+<body>
+	
+	<div class="wrapper">
+		
+		<section class="template">
+			
+			<h3>Тест по программированию</h3>
+
+			<script type="text/template" id="test__quiz">
+				<form class="test__form">
+
+					<ol>
+						<% for (var i = 0; i < data.length; i++) { %>
+					     
+						<li><%= data[i].question %></li>
+
+						<ul>
+							<% for (var j = 0; j < data[i].answer.length; j++) { %>
+					    	<li><input type="checkbox" name="<%= data[i].name %>" class="checkbox" value="<%= data[i].checkbox[j] %>"><%= data[i].answer[j] %></li>
+					    <% }; %>
+						</ul>
+
+						<% }; %>
+					</ol>
+
+				</form>
+			</script>
+
+			<button type="submit" form="test__form" value="check" class="test__submit">Проверить мои результаты</button>
+
+	  </section>
+		
+		<div class="modal__form">
+			<p class="modal__text"></p>
+			<button class="modal__close">X</button>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	
+	<script src="js/script.js" type="text/javascript"></script>
+	
+</body>
+</html>
