@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework #15-16</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" >
+	<script src="js/jquery-2.2.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery.tmpl.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrapper">
+
+	<form action="search.php" method="get">
+				<img class="search__logo" src="img/googol.png" alt="logo">
+        <input class="input__text" type="text" name="search-text" placeholder="enter search text..."/>
+        <input class="input__submit" type="submit" value="Search" name="button__search">
+    </form>
+
+    <div class="search__result">
+        <div class="search__result__data">
+            <script type="text/template" id="googleData">
+            	<div class="result__stats">
+          			<p>About <%= cursor.estimatedResultCount %> results (<%= cursor.searchResultTime %> seconds)</p>
+        		</div>
+                <% for(var i=0; i < results.length; i++){ %>
+                <div class="article">
+                    <div class="article__content">
+                        <h3 class="article__header"><a class="article__refer" href="<%=results[i].url%>"><%=results[i].title%></a></h3>
+                        <div class="article__container">
+                            <div class="article__url">
+                                <cite class="article__cite"><%=results[i].url%></cite>
+                            </div>
+                            <div class="article__text"><%=results[i].content%></div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+            </script>
+        </div>
+        <div class="search__result__cursor">
+            <script type="text/template" id="googleCursor">
+                <% for(var i=0; i < pages.length; i++){ %>
+                    <div class="page__number">
+                        <a class="current-<%= currentPageIndex+1 == pages[i].label %>" href="#" onClick="searchGoogle(<%=Number(pages[i].start)%>)">
+                            <%=pages[i].label%></a>
+                    </div>
+                <% } %>
+                <div class="page__number">
+                    <a href="#" <%= currentPageIndex+1 == (pages.length && (pages.length < 8)) ? 'hidden' : '' %> onClick="searchGoogle(<%=(currentPageIndex+1) * 8 %>)">Next</a>
+                </div>
+            </script>
+        </div>
+    </div>    
+	
+	</div>
+
+	<script src="js/script.js" type="text/javascript"></script>	
+	
+</body>
+</html>

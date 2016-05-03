@@ -1,0 +1,156 @@
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* main layout */
+.wrapper {
+  min-width: 768px;
+  width: 100%;
+  min-height: 960px;
+  height: 100%;
+  background: #fff;
+}
+
+.search__logo {
+	display: inline-block;
+	float: left;
+	margin-top: 12px;
+}
+
+form {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #666;
+  border-color: #e5e5e5;
+  background-color: #f1f1f1;  
+}
+
+.result__stats p {
+	padding: 15px 0;
+	font-size: 14px;
+  color: #777;
+}
+
+.input__text {
+  position: absolute;
+  display: inline-block;
+	float: left;
+  width: 580px;
+  height: 40px;
+  overflow: hidden;
+  margin-top: 10px;
+  padding-left: 10px;
+  border: 1px solid #e5e5e5;
+  font-size: 20px;
+}
+
+.input__submit {
+  position: absolute;
+  display: inline-block;  
+  float: left;  
+  left: 712px;
+  height: 42px;
+  margin-top: 10px;
+  font-size: 18px;
+  border: 1px solid #3b78e7;
+  background-color: #3b78e7;
+  padding: 5px;
+  color: #fff;
+}
+
+/* search query */
+.search__result__data {
+  position: relative;
+  margin-left: 120px;
+  width: 540px;
+}
+
+.article {
+  margin-bottom: 18px;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.article__header {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.article__header:hover {
+  text-decoration: underline;
+}
+
+.article__refer, .article__refer b {
+  text-decoration:none;
+  cursor:pointer;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.article__refer:visited {
+	color: #609;
+}
+
+.article__cite {
+  font-style: normal;
+  color: #006621;
+}
+
+.article__container {
+	color: #545454;
+}
+
+.article__url {
+  height: 16px;
+  line-height: 12px;
+  white-space: nowrap;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.article__text{
+  line-height: 18px;
+  font-size: 12px;  
+  word-wrap: break-word;
+  color: #777;
+}
+
+/* paging */
+.search__result__cursor {
+  position: absolute;
+  display: inline-block;
+  top: 860px;
+  margin-top: 30px;
+  margin-left: 240px;
+}
+
+.page__number {
+  float: left;
+  margin-left: 8px;
+}
+
+.page__number a {
+  text-decoration:none;
+  font-size: 15px;
+  color: #4285f4;
+}
+
+.page__number a:hover {
+  text-decoration:underline;
+  color: #4285f4;
+}
+
+.page__number .current-true {
+  color: #000;
+}
