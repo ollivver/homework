@@ -1,0 +1,119 @@
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  background: #e2e2e2;
+}
+
+/* main layout */
+.wrapper {
+  max-width: 768px;
+  height: 840px;
+  padding: 40px 20px;
+  margin: 20px auto;
+  background: #e6ffe6;
+}
+
+/* slider top section */
+section.demo {
+  position: relative;
+}
+
+/* the visible part of the image */
+.container {
+  width: 300px;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  border: 5px solid #737373;
+}
+
+.slider-list {
+  list-style: none;
+  width: 10000px;
+  padding: 0px;
+  position: relative;
+}
+
+.slider-item {
+  display: inline-block;
+  float: left;
+  height: 199px;
+}
+
+.slider-list img {
+  max-width: 300px;
+  height: auto;
+}
+
+button {
+  display: inline-block;
+  position: absolute;
+  float: left;
+  top: 40%;
+  border: 2px solid #008000;
+  border-radius: 5px;
+  background-color: #b3ffb3;
+  padding: 5px;
+}
+
+.prev {
+  margin-left: 175px;
+}
+
+.next {
+  margin-left: 570px;
+}
+
+/* template bottom section */
+section.template {
+  display: block;
+  width: 500px;
+  height: 520px;
+  margin: 5% auto;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+
+h3 {
+  text-align: center;
+}
+
+.photo {
+  display: block;
+  width: 89px;
+  height: 133px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: 2px solid #737373;
+}
+
+p {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.template ul {
+  padding-left: 25px;
+}
+
+.template ul li {
+  list-style-type:circle;
+}
+
+hr {
+  margin-top: 5px;
+  text-align: center;
+  color: #737373;
+}
