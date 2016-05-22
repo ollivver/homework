@@ -1,0 +1,87 @@
+/* reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+	background: url(../img/mountains-scenery.jpg) no-repeat;
+}
+
+/* text at the bottom right */
+p {
+	display: inline-block;
+	position: absolute;
+	right: 2%;
+	bottom: 8%;
+	color: #fff;
+}
+
+.wrapper {
+  width: 768px;
+  min-height: 80px;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper-header {
+	display: inline-block;
+	color: #fff;
+}
+
+/* input & button fields */
+.controlls {
+	display: inline-block;
+  margin: 0 130px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.item-value {
+  height: 32px;
+  width: 250px;
+  padding-left: 2px;
+}
+
+/* 'Add' button */
+.item-add {
+  height: 34px;
+  width: 60px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e6f5ff;
+  background: #0099ff;
+}
+
+.item-list {
+	list-style-type: none;
+}
+
+/* To Do List records */
+.item-text {
+	position: relative;
+	margin-bottom: 10px;
+  cursor: pointer;
+  background: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+}
+
+.item-delete {
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  bottom: 8%;
+  right: 2%;
+  cursor: pointer;
+  background: url('../img/delete-red.png');
+}
