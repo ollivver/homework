@@ -1,0 +1,28 @@
+{
+  "name": "exam",
+  "version": "1.0.0",
+  "description": "js_final_exam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u001b[A\u001b[Bhttps://github.com/ollivver/homework"
+  },
+  "keywords": [
+    "masonry",
+    "ajax",
+    "template",
+    "s\u001b[D\u001b[Cass",
+    "lodash"
+  ],
+  "author": "ollivver",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

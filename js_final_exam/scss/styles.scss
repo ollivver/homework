@@ -1,0 +1,1100 @@
+@import '_variables';
+
+body {
+  max-width: 2560px;
+  overflow-x: hidden;
+  font-family: 'montserratbold', 'robotolight', Arial, sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+  color: $font-color;
+}
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotolight';
+  src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #c0c0c0; 
+}
+
+header.head {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background: url(../img/header_photo.png) no-repeat center center;
+  background-size: cover;
+}
+
+.authorization__login {
+  width: 60px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-family: $montserrat-font;
+  font-size: 14px;
+  color: $white-color;
+  background-color: transparent;
+}
+
+.authorization__signup {
+  width: 90px;
+  height: 36px;
+  margin-left: 7px;
+  cursor: pointer;
+  border-radius: 19px;
+  border: 2px solid $white-color;
+  font-family: $montserrat-font;
+  font-size: 14px;
+  color: $white-color;
+  background-color: transparent;
+}
+
+.head__slogan__text {
+  text-align: center;
+  font-family: $roboto-font;
+  font-size: 18px;
+  color: $white-color;
+}
+
+.head__find__button {
+  display: block;
+  cursor: pointer;
+  border-radius: 19px;
+  border: 1px solid transparent;
+  font-family: $montserrat-font;
+  color: $white-color;
+  background-color: $red-color;
+}
+
+.works__container {
+  display: block;
+  margin: 0 auto;
+  background-color: $white-color;
+}
+
+.works__title__slogan {
+  text-align: center;
+  font-size: 22px;
+}
+
+
+.works__item {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.works__item__step {
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: $white-color;
+  background-color: $red-color;
+}
+
+.works__item__title {
+  display: inline-block;
+  position: absolute;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  color: $white-color;
+}
+
+.works__item__text {
+  display: inline-block;
+  position: absolute;
+  width: 88%;
+  font-family: $roboto-font;
+  font-size: 14px;
+  color: $white-color;
+}
+
+.partners_container {
+  display: block;
+  margin: 0 auto;
+  background-color: $white-color;
+}
+
+.partners__title__slogan {
+  text-align: center;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.partners__title__img {
+  display: block;
+  width: 124px;
+  margin: 0 auto;
+}
+
+.partners__item__title {
+  padding-top: 12px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.partners__item__title a {
+  text-decoration: none;
+  color: $font-color;
+}
+
+.partners__item__text {
+  padding-top: 8px;
+  text-align: center;
+}
+
+.partners__item__text a {
+  text-decoration: none;
+  font-family: $roboto-font;
+  color: $p-color;
+}
+
+.partners__see__button {
+  cursor: pointer;
+  border-radius: 19px;
+  border: 2px solid $red-color;
+  font-family: $montserrat-font;
+  font-size: 14px;
+  color: $red-color;
+  background-color: transparent;
+}
+
+.ideas__container {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: $white-color;
+}
+
+.ideas__title__slogan {
+  text-align: center;
+  font-size: 22px;
+}
+
+.ideas__item {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.ideas__item__name {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 22px;
+  line-height: 24px;
+  color: $white-color;
+}
+
+.ideas__search__partners {
+  display: block;
+  position: absolute;
+}
+
+.ideas__search__partners__title {
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.ideas__search__partners__text {
+  text-align: center;
+  font-family: $roboto-font;
+  font-size: 18px;
+}
+
+.ideas__search__interests {
+  text-align: center;
+  font-family: $roboto-font;
+  font-size: 18px;
+}
+
+.ideas__search__interests__button {
+  cursor: pointer;
+  border-radius: 19px;
+  border: 1px solid transparent;
+  font-family: $montserrat-font;
+  color: $white-color;
+  background-color: $red-color;
+}
+
+.footer__container {
+  display: block;
+  margin: 0 auto;
+  background-color: $white-color;
+}
+
+.footer__menu__item a, .footer__submenu__item  a {
+  padding: 0 4px;
+  text-decoration: none;
+  color: $font-color;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+.wrapper {
+  min-width: $mobile-width;
+  height: 3905px;
+}
+
+header.head {
+  width: $mobile-width;
+  height: 540px;
+}
+
+.head__authorization {
+  display: block;
+  width: 170px;
+  height: 36px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.head__logo__img {
+  text-align: center;
+  margin-top: 115px;
+}
+
+.head__slogan__title {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 34px;
+  color: $white-color;
+}
+
+.head__slogan__text {
+  display: block;
+  width: 70%;
+  margin: 12px auto 0 auto;
+}
+
+.head__find__button {
+  width: 280px;
+  height: 40px;
+  margin: 20px auto;
+  font-size: 17px;
+}
+
+/* works section for mobile */
+.works__container {
+  width: $mobile-width;
+  height: 816px;
+  background-color: $white-color;
+}
+
+.works__title__slogan {
+  padding: 38px 0 15px 0;
+}
+
+.works__item {
+  width: 300px;
+  height: 240px;
+  margin: 3.5px 10px;
+}
+
+.jcarousel-wrapper {
+  display: none;
+}
+
+.works__item__img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+}
+
+.works__item__step {
+  width: 70px;
+  top: 33%;
+  left: 19%;
+}
+
+.works__item__title {
+  top: 37%;
+  left: 6%;
+}
+
+.works__item__text {
+  top: 72%;
+  left: 6%;
+}
+
+/* partners section for mobile */
+.partners_container {
+  width: $mobile-width;
+  height: 1112px;
+}
+
+.partners__title__slogan {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 35px 0 12px 0;
+}
+
+.partners__item {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 220px;
+  margin: 3.5px 10px;
+  overflow: hidden;
+}
+
+.partners__item.right.first {
+  padding-top: 30px;
+}
+
+.partners__see__button {
+  display: block;
+  width: 284px;
+  height: 38px;
+  margin: 0 auto;
+}
+
+/* ideas section for mobile */
+.ideas__container {
+  width: $mobile-width;
+  height: 1245px;
+}
+
+.ideas__title__slogan {
+  padding-top: 14px;
+  padding-bottom: 16px;
+  line-height: 24px;
+}
+
+.ideas__pictures {
+  margin: 0 auto;
+  padding-left: 10px; 
+}
+
+.ideas__item {
+  width: 300px;
+  height: 120px;
+}
+
+.ideas__item__img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+}
+
+.ideas__search__partners {
+  left: 0;
+  bottom: 3.35%;
+}
+
+.ideas__search__partners__title {
+  margin-top: 20px;
+}
+
+.ideas__search__partners__text {
+  margin-top: 12px;
+}
+
+.ideas__search__input {
+  width: 264px;
+  height: 38px;
+  margin-top: 15px;
+  padding-left: 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #cfcfcf;
+}
+
+.ideas__search__interests__button {
+  width: 284px;
+  height: 38px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* footer section for mobile */
+.footer__container {
+  width: $mobile-width;
+  height: 190px;
+}
+
+.footer__logo__img {
+  padding-top: 18px;
+  border-top: 2px solid $red-color;
+  text-align: center;
+}
+
+.footer__menu {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.footer__menu__item {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer__submenu {
+  text-align: center;
+  padding-top: 2px;
+}
+
+.footer__submenu__item {
+  display: inline-block;
+  font-family: $roboto-font;
+  color: $font-color;
+}
+
+.footer__dev__img {
+  text-align: center;
+  margin-left: -2px;
+  padding-top: 14px;
+}
+}
+/* end of mobile layout */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+.wrapper {
+  min-width: $tablet-width;
+  height: 3658px;
+}
+
+/* header field for tablet */
+header.head {
+  width: $tablet-width;
+  height: 700px;
+}
+
+.head__authorization {
+  display: block;
+  float: right;
+  width: 160px;
+  padding: 39px 50px 0 0;
+}
+
+.authorization__signup {
+  width: 88px;
+}
+
+.head__logo__img {
+  display: block;
+  float: left;
+  padding: 44px 0 0 48px;
+}
+
+.head__slogan__title {
+  display: block;
+  text-align: center;
+  padding-top: 222px;
+  text-transform: uppercase;
+  font-size: 52px;
+  line-height: 56px;
+  color: $white-color;
+}
+
+.head__slogan__text {
+  margin-top: 36px;
+  font-size: 22px;
+}
+
+.head__find__button {
+  width: 220px;
+  height: 38px;
+  margin: 39px auto;
+  font-size: 14px;
+}
+
+/* works section for tablet */
+.works__container {
+  width: $tablet-width;
+  height: 555px;
+}
+
+.works__title__slogan {
+  padding: 100px 0 35px 0;
+}
+
+.works__item {
+  width: 236px;
+  height: 400px;
+  margin: 3.5px 7px;
+}
+
+.works__item__img {
+  display: none;
+}
+
+/* carousel plugin section */ 
+.jcarousel-wrapper {
+  position: relative;
+  width: 236px;
+  height: 310px;
+  margin: 0 auto;
+}
+
+.head__jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.head__jcarousel ul {
+  width: 20000em;
+  position: relative;
+  /* Optional, required in this case since it's a <ul> element */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* These you can set the width limitation of the item elements */
+.head__jcarousel li {
+  /* Required only for block elements like <li>'s */
+  float: left;
+  width: 236px;
+  height: auto;
+}
+
+/** Carousel Controls **/
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 38px;
+  width: 30px;
+  height: 55px;
+}
+
+.jcarousel-control-prev {
+  left: 18px;
+}
+
+.jcarousel-control-next {
+  right: 10px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+  display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+  cursor: default;
+}
+
+.works__item__step {
+  width: 70px;
+  top: 55%;
+  left: 24%;
+}
+
+.works__item__title {
+  top: 57%;
+  left: 8%;
+}
+
+.works__item__text {
+  top: 78%;
+  left: 9%;
+}
+
+/* partners section for tablet */
+.partners_container {
+  width: $tablet-width;
+  height: 770px;
+}
+
+.partners__title__slogan {
+  padding: 98px 0 30px 0;
+}
+
+.partners__item {
+  display: block;
+  width: 245px;
+  height: 230px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.partners__item.left {
+  float: left;
+  clear: left;
+  padding-left: 136px;
+  padding-bottom: 28px;
+} 
+
+.partners__item.right {
+  margin-left: 0;
+  padding-left: 10px;
+  padding-bottom: 28px;
+}
+ 
+.partners__see__button {
+  display: block;
+  clear: left;
+  width: 192px;
+  height: 38px;
+  margin: 18px auto 0 auto;
+}
+
+/* ideas section for tablet */
+.ideas__container {
+  width: $tablet-width;
+  height: 1434px;
+}
+
+.ideas__title__slogan {
+  padding-top: 55px;
+  padding-bottom: 35px;
+}
+
+.ideas__item__wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+.ideas__pictures {
+  margin: 0 auto;
+  padding-left: 10px; 
+}
+
+.ideas__item {
+  width: 245px;
+  height: 310px;
+}
+
+.ideas__item__img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+}
+
+.ideas__item.wide {
+  display: inline-block;
+  position: relative;
+  width: 495px;
+  height: 310px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.ideas__search__partners {
+  height: 204px;
+  left: 22%;
+  bottom: 6.75%;
+}
+
+.ideas__search__partners__title {
+  margin-top: 44px;
+}
+
+.ideas__search__partners__text {
+  margin-top: 32px;
+}
+
+.ideas__search__input {
+  width: 216px;
+  height: 38px;
+  margin-top: 40px;
+  padding-left: 28px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+.ideas__search__interests__button {
+  width: 160px;
+  height: 38px;
+  margin: 20px 0 0 10px;
+  font-size: 14px;
+}
+
+/* footer section for tablet */
+.footer__container {
+  width: $tablet-width;
+  height: 200px;
+  border-top: 2px solid $red-color;
+}
+
+.footer__logo__img {
+  display: inline-block;
+  padding: 38px 0 0 40px;
+  vertical-align: top;
+}
+
+.footer__menu {
+  display: inline-block;
+  width: 400px;
+}
+
+.footer__menu__item {
+  display: block;
+  float: left;
+  text-align: left;
+  padding: 38px 18px 0 74px;
+}
+
+.footer__submenu {
+  text-align: left;
+  padding-top: 3px;
+}
+
+.footer__submenu__item {
+  padding-top: 10px;
+  font-family: $roboto-font;
+  color: $font-color;
+}
+
+.footer__dev__img {
+  display: inline-block;
+  float: right;
+  padding: 40px 40px 0 0;
+}
+/* end layout for tablet */ 
+} 
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+.wrapper {
+  min-width: $desktop-width;
+  height: 3398px;
+}
+
+/* header field for desktop */
+header.head {
+  width: $desktop-width;
+  height: 700px;
+}
+
+.head__authorization {
+  display: block;
+  float: right;
+  width: 164px;
+  padding: 38px 248px 0 0;
+}
+
+.head__logo__img {
+  display: block;
+  float: left;
+  padding: 46px 0 0 250px;
+}
+
+.head__slogan__title {
+  display: block;
+  text-align: center;
+  padding-top: 220px;
+  text-transform: uppercase;
+  font-size: 52px;
+  line-height: 60px;
+  color: $white-color;
+}
+
+.head__slogan__text {
+  margin-top: 28px;
+  font-size: 22px;
+}
+
+.head__find__button {
+  width: 224px;
+  height: 38px;
+  margin: 40px auto;
+  font-size: 14px;
+}
+
+/* works section for desktop*/
+.works__container {
+  width: $desktop-width;
+  height: 555px;
+}
+
+.works__title__slogan {
+  padding: 100px 0 32px 0;
+}
+
+.works__wrapper {
+  display: block;
+  width: 945px;
+  margin: 0 auto;
+}
+
+.works__item {
+  width: 300px;
+  height: 400px;
+  margin: 3.5px 5px;
+}
+
+.works__item__img {
+  display: none;
+}
+
+/* caroysel plugin section */ 
+.jcarousel-wrapper {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.head__jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.head__jcarousel ul {
+  width: 20000em;
+  position: relative;
+  /* Optional, required in this case since it's a <ul> element */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* These you can set the width limitation of the item elements */
+.head__jcarousel li {
+  /* Required only for block elements like <li>'s */
+  float: left;
+  width: 300px;
+  height: auto;
+}
+
+/** Carousel Controls **/
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 154px;
+  width: 30px;
+  height: 55px;
+}
+
+.jcarousel-control-prev {
+  left: 22px;
+}
+
+.jcarousel-control-next {
+  right: 22px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+  display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+  cursor: default;
+}
+
+.works__item__step {
+  width: 70px;
+  top: 60%;
+  left: 20%;
+}
+
+.works__item__title {
+  top: 63%;
+  left: 7%;
+}
+
+.works__item__text {
+  top: 84%;
+  left: 7%;
+}
+
+/* partners section for desktop */
+.partners {
+  display: block;
+  width: $desktop-width;
+  margin: 0 auto;
+  background-color: $white-color;
+}
+
+.partners_container {
+  width: 940px;
+  height: 520px;
+}
+
+.partners__title__slogan {
+  padding: 97px 0 35px 0;
+}
+
+.partners__item {
+  display: inline-block;
+  width: 230px;
+  height: 240px;
+  margin: 0 auto;
+  padding-left: 4px;
+  overflow: hidden;
+}
+
+.partners__item.first {
+  float: left;
+}
+
+.partners__see__button {
+  display: block;
+  clear: left;
+  width: 190px;
+  height: 40px;
+  margin: 25px auto 0 auto;
+}
+
+/* ideas section for desktop */
+.ideas {
+  display: block;
+  width: $desktop-width;
+  margin: 0 auto;
+  background-color: $white-color;
+}
+
+.ideas__container {
+  width: 940px;
+  height: 1428px;
+}
+
+.ideas__title__slogan {
+  padding-top: 48px;
+  padding-bottom: 38px;
+}
+
+.ideas__item__wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+.ideas__pictures {
+  margin: 0 auto;
+  padding-left: 25px; 
+}
+
+.ideas__item {
+  width: 295px;
+  height: 310px;
+}
+
+.ideas__item__img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+}
+
+.ideas__item.wide {
+  display: inline-block;
+  position: relative;
+  width: 595px;
+  height: 310px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.ideas__search__partners {
+  left: 27.5%;
+  bottom: 7%;
+}
+
+.ideas__search__partners__title {
+  margin-top: 100px;
+}
+
+.ideas__search__partners__text {
+  margin-top: 35px;
+}
+
+.ideas__search__input {
+  width: 230px;
+  height: 38px;
+  margin-top: 38px;
+  padding-left: 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+.ideas__search__interests__button {
+  width: 160px;
+  height: 38px;
+  margin: 18px 0 0 10px;
+  font-size: 14px;
+}
+
+/* footer section for desktop */
+footer {
+  display: block;
+  width: $desktop-width;
+  margin: 0 auto;
+  border-top: 2px solid $red-color;
+  background-color: $white-color;
+}
+
+.footer__container {
+  width: 940px;
+  height: 200px;
+}
+
+.footer__logo__img {
+  display: inline-block;
+  padding: 36px 0 0 0;
+  vertical-align: top;
+}
+
+.footer__menu {
+  display: inline-block;
+  width: 400px;
+}
+
+.footer__menu__item {
+  display: block;
+  float: left;
+  text-align: left;
+  padding: 38px 2px 0 92px;
+}
+
+.footer__menu__item a, .footer__submenu__item a {
+  padding: 0 2px;
+}
+
+.footer__submenu {
+  text-align: left;
+  padding-top: 0;
+}
+
+.footer__submenu__item {
+  padding-top: 10px;
+  font-family: $roboto-font;
+  color: $font-color;
+}
+
+.footer__dev__img {
+  display: inline-block;
+  float: right;
+  padding: 39px 0 0 0;
+}
+/* end layout for desktop */ 
+}
